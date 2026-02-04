@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="xyz.css">
+    <title>abc</title>
+    <style type="text/css">
+        #a {
+            color: red;
+            background-color: indigo;
+        }
+
+        .a {
+            color: indigo;
+            background-color: beige;
+        }
+        /* div {
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            animation-name: example;
+            animation-duration: 4s;
+        } */
+        /* div {
+            0% {background: red;}
+            25% {background: yellow;}
+            50% {background: blue;}
+            100% {background: green;}
+        } */
+        #grad1  { 
+            height: 200px; 
+            background: rgb(68, 0, 255); 
+            background: linear-gradient(rgb(68, 0, 255), rgb(255, 0, 76));
+        }
+        #grad2 {
+            height: 200px;
+            background: rgb(94, 255, 0);
+            background: linear-gradient(rgb(0, 183, 255), rgb(51, 255, 0) )
+        }
+        #grad3 { 
+            height: 200px; 
+            background: red;     
+            background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); 
+        } 
+        /* div {
+            0%{background-color:red; left:0px; top:0px;} 
+            25%{background-color:yellow; left:200px; top:0px;} 
+            50%{background-color:blue; left:200px; top:200px;} 
+            75%{background-color:green; left:0px; top:200px;} 
+            100%{background-color:red; left:0px; top:0px;}
+        } */
+        /* @keyframes example {
+            0%{background-color:red; left:0px; top:0px;} 
+            25%{background-color:yellow; left:200px; top:0px;} 
+            50%{background-color:blue; left:200px; top:200px;} 
+            75%{background-color:green; left:0px; top:200px;} 
+            100%{background-color:red; left:0px; top:0px;} 
+            
+        } */
+        /* div  { 
+            width: 100px; 
+            height: 50px; 
+            background-color: yellowgreen; 
+            font-weight: bold; 
+            position: relative; 
+            animation: mymove 5s infinite; 
+        } */
+        /* #div1 {animation-timing-function: linear;} 
+        #div2 {animation-timing-function: ease;} 
+        #div3 {animation-timing-function: ease-in;} 
+        #div4 {animation-timing-function: ease-out;} 
+        #div5 {animation-timing-function: ease-in-out;} 
+        @keyframes mymove {
+            from{left: 0px;}
+            to{left: 300px;}
+        } */
+         
+    </style>
+</head>
+
+<body>
+    <p>Welcome to HTML</p>
+    <p>Welcome to internal CSS</p>
+    <p style="color:green;background-color: pink;">welcome to inline css</p>
+    <p id="a">using id selectors</p>
+    <p class="a">using class selectors</p>
+    <div id="div1">linear</div> 
+    <div id="div2">ease</div> 
+    <div id="div3">ease-in</div> 
+    <div id="div4">ease-out</div> 
+    <div id="div5">ease-in-out</div> 
+    <div id="grad1"></div>
+    <div id="grad2"></div>
+    <div id="grad3"></div>
+
+
+</body>
+
+</html>
