@@ -1,0 +1,26 @@
+<!-- 5. Write a program to find the second largest element of an array without sorting it. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 5</title>
+    <script>
+        var arr = new Array(10, 20, 4, 45, 45, 99, 99, 6);
+        let first = -Infinity;
+        let second = -Infinity;
+        for (let num of arr) {
+            if (num > first) {
+                second = first;
+                first = num;
+            } 
+            else if (num > second && num < first){ 
+                second = num; 
+            } 
+        } 
+        console.log("Second Largest:", second); 
+    </script>
+</head>
+<body>
+</body> 
+</html>

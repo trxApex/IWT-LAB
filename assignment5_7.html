@@ -1,0 +1,20 @@
+<!-- 7. Write a program to count how many times each element occurs in an array. -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 5</title>
+    <script>
+        const items = ["apple", "banana", "apple", "orange", "banana", "apple"];
+        const counts = {};
+        for (let item of items) {
+            counts[item] = (counts[item] || 0) + 1;
+        }
+        console.log("Element Counts:", counts);
+    </script>
+</head>
+<body>
+</body>
+</html>
