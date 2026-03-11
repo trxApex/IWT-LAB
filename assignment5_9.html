@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT 5</title>
+    <script>
+        let number = prompt("Enter the number to check armstrong or not: ");
+        function isArmstrong(number) {
+            let power = number.length;
+            let sum = 0;
+            let n = number;
+            while(n > 0) {
+                let rem = n % 10;
+                n = Math.floor(n / 10);
+                sum += Math.pow(rem, power);
+            }
+            return sum == number;
+        }
+        let result = isArmstrong(number);
+        if(result) {
+            console.log("Entered number is Armstrong number!");
+        }
+        else {
+            console.log("Entered number is not Armstrong number:");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
