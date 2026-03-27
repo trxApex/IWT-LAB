@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Document</title>
+        <script>
+            function changebgcolor(color) {
+                if(confirm(`Do you really want to change the background to ${color}?`)) {
+                    document.getElementById('colorbox').style.backgroundColor = color;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div id="colorbox" style="width: 100px; height: 100px; border: 1px solid black; margin-bottom: 10px;"></div>
+        <button onclick="changebgcolor('Red')">RED</button>
+        <button onclick="changebgcolor('Green')">GREEN</button>
+        <button onclick="changebgcolor('Blue')">BLUE</button>
+    </body>
+</html>
